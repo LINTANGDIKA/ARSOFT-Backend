@@ -22,7 +22,7 @@
         <tbody>
             @foreach ($data as $item)
             <tr>
-                <th scope="row">{{ $item['id'] }}</th>
+                <th scope="row">{{ $loop->iteration }}</th>
                 <td>{{ $item['title'] }}</td>
                 <td>{{ $item['detail'] }}</td>
                 <td>{{ $item['status'] }}</td>
