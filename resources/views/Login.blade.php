@@ -1,5 +1,15 @@
 @extends('Layouts.Layout')
 @section('content')
+@if (Session::has('success'))
+    <div class="alert alert-primary" role="alert">
+        {{ Session::get('success') }}
+    </div>
+@endif
+@if (Session::has('error'))
+    <div class="alert alert-danger" role="alert">
+        {{ Session::get('error') }}
+    </div>
+@endif
 <div class="admin">
     <div class="imageContent">
         <h1 class="bi bi-person-circle text-center titleAdmin"></h1>
