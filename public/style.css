@@ -34,15 +34,10 @@
     margin-top: -6.6rem;
     margin-bottom: 2rem;
 }
-.btnuser{
-    width: 10%;
-    height: 2.5rem;
-    border-radius: 5px;
-    border: none;
-
-    background: linear-gradient(45deg,  #42b7f5cc 0%,rgba(66, 245, 189,0.4) 100%);
+.carda {
+    width: 25rem;
 }
-.btnuser a {
-    color: rgb(0, 0, 0);
+.link{
     text-decoration: none;
+    color: black;
 }

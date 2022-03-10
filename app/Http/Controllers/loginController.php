@@ -29,7 +29,6 @@ class loginController extends Controller
                 return redirect()->route('home');
             } else {
                 return redirect()->route('login')->with('error', 'Password Salah');
-                return 'Password Salah';
             }
         }
         $data['password'] = Hash::make($data['password']);

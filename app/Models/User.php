@@ -28,6 +28,10 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
+    public function todo()
+    {
+        return $this->hasMany(todo::class, 'user_id');
+    }
 
     /**
      * The attributes that should be cast.
