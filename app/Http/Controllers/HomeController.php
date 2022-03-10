@@ -11,8 +11,8 @@ class HomeController extends Controller
 {
     public function home()
     {
-        $data = User::find(Auth::user()->id)->todo;
         if (Auth::check()) {
+            $data = User::find(Auth::user()->id)->todo;
             return view('User', [
                 'title' => 'Home Page',
                 'email' => Auth::user()->email,
